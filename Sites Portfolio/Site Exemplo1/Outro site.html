@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weston.co</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="hamburguer">
+
+    </div>
+    <nav id="nav-itens-mobile">
+        <ul>
+
+            <li>Why Weston?<i></i></li>
+
+            <li>Team</li>
+
+            <li>Enterprise</li>
+
+            <li>Explore</li>                
+        </ul>
+    </nav>
+    <header>
+        
+        <nav>
+
+            <ul id="nav-itens">
+
+                <li></li>
+
+                <li>Why Weston?<i></i></li>
+
+                <li>Team</li>
+
+                <li>Enterprise</li>
+
+                <li>Explore</li>
+
+            </ul>
+
+        </nav>
+        <nav>
+
+            <ul id="search-bar">
+
+                <input type="search" id="buscar" placeholder="Search">
+
+                <li style="margin-left: 15px;">Sign in</li>
+
+                <li>Sign up</li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div>
+
+            <h1>The best design for your website!</h1>
+
+            <p> We use the best technologies for the best result! </p><p>"Every great design begins with an even better story."</p>
+
+            <form>
+
+                <input type="text" placeholder="Email adress" id="email">
+
+                <button>Sign in!</button>
+                
+            </form>
+
+        </div>
+
+    </main>
+    <section>
+        <div id="card-ctn">
+            <div class="card">
+
+                <div class="card-img"><img src="imgs/laptop.jpg" alt=""></div>
+                <div class="card-caption">
+                    <h2>Work</h2>
+                    <p class="legend" >We work on something we love, what differentiates us, and why we are good at what we do.</p>
+                </div>
+                <hr>
+            
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-img"><img src="imgs/teamwork.jpg" alt=""></div>
+                <div class="card-caption">
+                    <h2>Our team</h2>
+                    <p class="legend">Our team is formed with the best professionals in the area, always delivering the best quality.</p>
+                </div>
+                <hr>
+
+            </div>
+
+            <div class="card">
+
+                <div class="card-img"><img src="imgs/vison.webp" alt=""></div>
+                <div class="card-caption">
+                    <h2>Vision</h2>
+                    <p class="legend">Making dreams come true for everyone, at a fair price</p>
+
+                </div>
+                <hr>
+
+            </div>
+        </div>
+
+        
+        <div id="slider-ctn">
+            <h1 id="gal"style="">Gallery</h1>
+            <div id="slides">
+                <img src="https://dummyimage.com/1920x1080/7d7d7d/fff.jpg&text=PlaceHolder1" alt="" class="slide active">
+                <img src="https://dummyimage.com/1920x1080/7d7d7d/fff.jpg&text=PlaceHolder2" alt="" class="slide">
+                <img src="https://dummyimage.com/1920x1080/7d7d7d/fff.jpg&text=PlaceHolder3" alt="" class="slide">
+            </div>
+        </div>
+        <div>
+            <p style="color:black;text-align: center;" class="about-txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum ratione rem quibusdam illo libero, architecto temporibus ab quam nesciunt accusamus nemo dolore fuga esse et id eveniet unde quia placeat.</p>
+        </div>
+    </section>
+    <div id="about">
+        <h1>About us</h1>
+        <div id="p">
+            <p class="about-txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo at ex, ratione commodi beatae quis delectus qui dolorum veritatis ipsam. Asperiores, est unde magnam iure perferendis dolorum dignissimos sed Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere dolore reprehenderit repellendus asperiores, eum consequuntur praesentium ad soluta eius molestias qui distinctio illo, blanditiis, modi accusamus voluptatem! Voluptas, voluptatem unde!ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, optio quasi! Facilis vitae natus corporis officiis, pariatur ea fugiat sapiente tempora, ab minus nostrum perspiciatis asperiores ipsum aspernatur modi tenetur.</p>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+<script>
+    var i = 0;
+    var imgs = document.getElementsByClassName('slide');
+    setInterval(function(){
+        imgs[i].classList.remove("active")
+        i++
+        if(i >= imgs.length)
+        {
+            i=0;
+        }
+        imgs[i].classList.add("active");
+        
+    },3000)
+    var navbar = document.getElementById("nav-itens-mobile")
+    var hamb = document.getElementById("hamburguer")
+    hamb.addEventListener("click",()=>{
+        navbar.classList.toggle("active")
+        if(navbar.classList.contains("active")){
+            hamb.style.left = "200px";
+        }
+        else{
+            hamb.style.left = "0"
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menus</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body style="background-color:black;">
+    
+    <div id="bg">     
+        <header>
+            <div id="logo">
+                <h1>Fairfield Pizza <span style="color: #ff0157;">.</span></h1>
+            </div>
+            <nav>
+                <ul id="nav-itens">
+                    <li><a href="restaurant.html">Home</a></li>
+                    <li><a href="menus.html">Menu</a></li>
+                    <li><a href="#l">Locations</a></li>
+                    <li><a href="#f">Social Media</a></li>
+                    <li><img id="ico"src="imagens/moto-delivery-icon.png"></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="back">
+            <h1 id="discover">Discover our Menu<span style="color:#ff0157;">.</span></h1>
+        </div>
+    </div>
+    <div id="men">
+
+        <div class="men-item">
+
+            <div class="men-img">
+                
+                    <img src="menu-imgs/pizza-1317699_1280.jpg" alt="">
+                </div>
+            <div class="menu-caption">
+                <div class="center">
+                    <h1>Pizzas</h1>
+                    </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, similique enim blanditiis perferendis recusandae commodi, maxime illo repudiandae iusto quia, mollitia obcaecati. Error, iure deleniti perspiciatis quaerat eaque corrupti tempore.</p>
+
+            </div>
+
+        </div>
+
+        <div class="men-item">
+
+            
+            <div class="men-img">
+                
+                <img src="menu-imgs/fast-food-2132863_1280.jpg" alt="">
+            </div>
+            <div class="menu-caption">
+                <div class="center">
+                    <h1>Subs</h1>
+                    </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, similique enim blanditiis perferendis recusandae commodi, maxime illo repudiandae iusto quia, mollitia obcaecati. Error, iure deleniti perspiciatis quaerat eaque corrupti tempore.</p>
+            </div>
+
+        </div>
+        <div class="men-item">
+            
+            <div class="men-img">
+                
+                <img src="menu-imgs/tacos-3409675_1280.jpg" alt="">
+            </div>
+            <div class="menu-caption">
+                <div class="center">
+                    <h1>Wraps</h1>
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, similique enim blanditiis perferendis recusandae commodi, maxime illo repudiandae iusto quia, mollitia obcaecati. Error, iure deleniti perspiciatis quaerat eaque corrupti tempore.</p>
+
+            </div>
+
+        </div>
+        <div class="men-item">
+            
+            <div class="men-img">
+                
+                <img src="menu-imgs/spaghetti-485759_1280.jpg" alt="">
+            </div>
+            <div class="menu-caption">
+                <div class="center">
+                    <h1>Pastas</h1>
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, similique enim blanditiis perferendis recusandae commodi, maxime illo repudiandae iusto quia, mollitia obcaecati. Error, iure deleniti perspiciatis quaerat eaque corrupti tempore.</p>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        var discover = document.getElementById("discover");
+        window.addEventListener("load",function(){
+            discover.style.left = "50%"
+            discover.style.fontSize = "4rem"
+            
+            })
+        discover.addEventListener("transitionend",function(){
+                discover.style.letterSpacing = "10px"
+        })
+        var header = document.querySelector("header");
+        window.addEventListener("scroll",function(){
+            header.classList.toggle("white-bg",window.scrollY > 0)
+        })
+    </script>
+</body>
+</html>
